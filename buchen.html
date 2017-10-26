@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Buchen</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="top-bar fixed"></div>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <img class="navbar-brand logo" src="img/logo.png"></img>
+        <a class="logo-text" href="index.html">King's Limousine</a>
+        <button id="hamburger" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dienste.html">Dienste</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buchen.html">Buchen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <form class="container" id="needs-validation" novalidate>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label>Vorname</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="" value="" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label>Nachname</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="" value="" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label>Ort</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="" required>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label>Kanton</label>
+                <input type="text" class="form-control" id="validationCustom04" placeholder="" required>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label>PLZ</label>
+                <input type="text" class="form-control" id="validationCustom05" placeholder="" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-3 mb-3">
+                <label>Datum von:</label>
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="form-group col-md-3 mb-3">
+                <label>Datum bis:</label>
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label>Anzahl-Personen:</label>
+                <input type="text" class="form-control" id="validationCustom05" placeholder="" required>
+            </div>
+            <div class="col-md-3 mb-3">
+            <label>Bezahlen Sie mit:</label>
+            <div class="radio">
+                <label><input type="radio" name="optradio">  Credit Card</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">  Postfinance</label>
+            </div>
+            <div class="radio disabled">
+                <label><input type="radio" name="optradio">  Paypal</label>
+            </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Reservation</button>
+        <hr>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2017 King's Limousine VIP Service</p>
+        </footer>
+    </form>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

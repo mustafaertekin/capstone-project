@@ -1,4 +1,3 @@
-
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -22,6 +21,50 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
+}
+
+.container {
+    width: 1000px;
+    margin-top: 30px;
+}
+
+/*-----------------------------------------------*/
+/* Dienste Page */
+.box {
+  background:#fff;
+  transition:all 0.2s ease;
+  border:2px dashed #dadada;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-clip: padding-box;
+  padding:0 20px 20px 20px;
+  min-height:340px;
+}
+
+.box:hover {
+  border:2px solid #525C7A;
+}
+
+.box span.box-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.box .box-content {
+  padding: 16px;
+  border-radius: 0 0 2px 2px;
+  background-clip: padding-box;
+  box-sizing: border-box;
+}
+.box .box-content p {
+  color:#515c66;
+  text-transform:none;
+}
+.dienste {
+    margin-top: 30px;
 }
 
 /* CUSTOMIZE THE CAROUSEL
