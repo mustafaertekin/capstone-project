@@ -37,7 +37,7 @@
     </nav>
 
     <div class="sectionBuchenKontakt">
-        <h1>Reservation / Buchen</h1><br><br>
+        <h1>Reservation / Buchen</h1><br>
 
         <form data-toggle="validator" role="form">
             <div class="row">
@@ -101,13 +101,16 @@
                     <fieldset>
                         <legend>Auto:</legend>
                         <div class="radio">
-                            <label><input type="radio" name="autoModel">Mercedes E</label>
+                            <label><input type="radio" name="autoModel"> Mercedes E</label>
                         </div>
                         <div class="radio">
-                            <label><input type="radio" name="autoModel">Mercedes S</label>
+                            <label><input type="radio" name="autoModel"> Mercedes S</label>
                         </div>
                         <div class="radio">
-                            <label><input type="radio" name="autoModel">Mercedes V</label>
+                            <label><input type="radio" name="autoModel"> Mercedes V</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="autoModel"> Hummer</label>
                         </div>
                     </fieldset>
                 </div>
@@ -115,16 +118,16 @@
                     <fieldset>
                         <legend>Bezahlen mit:</legend>
                         <div class="radio">
-                            <label>
-                            <input type="radio" name="payment">  Credit Card</label>
+                            <label><input type="radio" name="payment">  Credit Card</label>
                         </div>
                         <div class="radio">
-                            <label>
-                            <input type="radio" name="payment">  Postfinance</label>
+                            <label><input type="radio" name="payment">  Postfinance</label>
                         </div>
                         <div class="radio">
-                            <label>
-                            <input type="radio" name="payment">  Paypal</label>
+                            <label><input type="radio" name="payment">  Paypal</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="payment">  Bar</label>
                         </div>
                     </fieldset>
                 </div>
@@ -133,12 +136,10 @@
             <div>
                 <label for="agb" class="control-label">* </label>
                 <input id="agb" type="checkbox" required><span> Ich habe die Allgemeinen Geschäftsbedingungen gelesen und stimme zu.</span>
-            </div><br>
+            </div>
             <div class="form-group">
                 <button class="col-md-2 btn btn-primary zoom myForm" type="submit">Reservation</button>
             </div>
-            <br><br>
-            <hr>
 
             <!--
     ------ FOOTER -----------

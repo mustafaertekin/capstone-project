@@ -1,4 +1,7 @@
 $(document).ready(function() {
-    $('#myForm').validator()
+    $('#myForm').validator();
+    
+    
+
 });
 
