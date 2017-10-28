@@ -15,7 +15,7 @@
 <body>
     <div class="top-bar fixed"></div>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <img class="navbar-brand logo" src="img/logo.png"></img>
+        <img class="navbar-brand logo" src="img/logo.png" alt="logo image"></img>
         <a class="logo-text" href="index.html">King's Limousine</a>
         <button id="hamburger" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,24 +38,25 @@
         </div>
     </nav>
 
-    <form class="container" id="needs-validation" novalidate>
-        <div class="row">
+    <form class="container sectionBuchenKontakt" id="needs-validation" novalidate>
+        <h2>Buchen</h2><br>
+           <div class="row">
             <div class="col-md-6 mb-3">
-                <label>Vorname</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="" value="" required>
+                <label class="col-md-3 control-label" for="vorname">Vorname</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Vorname" value="" required>
             </div>
             <div class="col-md-6 mb-3">
-                <label>Nachname</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="" value="" required>
+                <label class="col-md-3 control-label" for="nachname">Nachname</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Nachname" value="" required>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 mb-3">
-                <label>Ort</label>
+                <label>Adresse</label>
                 <input type="text" class="form-control" id="validationCustom03" placeholder="" required>
             </div>
             <div class="col-md-3 mb-3">
-                <label>Kanton</label>
+                <label>Ort/ City</label>
                 <input type="text" class="form-control" id="validationCustom04" placeholder="" required>
             </div>
             <div class="col-md-3 mb-3">

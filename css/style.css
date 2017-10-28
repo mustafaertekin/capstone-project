@@ -23,7 +23,7 @@ body {
     left: 0;
 }
 
-.container {
+.sectionBuchenKontakt {
     width: 1000px;
     margin-top: 30px;
 }
@@ -73,6 +73,10 @@ body {
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 15px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -104,12 +108,7 @@ body {
     margin: 0 auto;
     margin-bottom: 1%;
 }
-.carousel {
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    margin-top: 15px;
-}
+
 .logo {
     height: 40px;
 }
@@ -118,6 +117,10 @@ body {
     width: 100px;
     color: #9fffff;
     line-height: 1;
+}
+
+.btn {
+    background-color: bisque;
 }
 
 /* MARKETING CONTENT
