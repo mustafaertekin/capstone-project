@@ -8,14 +8,12 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/script.js"></script>
-
 </head>
 
 <body>
     <div class="top-bar fixed"></div>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <img class="navbar-brand logo" src="img/logo.png" alt="logo image"></img>
+        <img class="navbar-brand logo" src="img/logo.png" alt="Kings Limousine Logo" />
         <a class="logo-text" href="index.html">King's Limousine</a>
         <button id="hamburger" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,95 +36,121 @@
         </div>
     </nav>
 
-    <form class="container sectionBuchenKontakt" id="needs-validation" novalidate>
-        <h2>Buchen</h2><br>
-           <div class="row">
-            <div class="col-md-6 mb-3">
-                <label class="col-md-3 control-label" for="vorname">Vorname</label>
-                <input type="text" class="form-control" id="validationCustom01" placeholder="Vorname" value="" required>
-            </div>
-            <div class="col-md-6 mb-3">
-                <label class="col-md-3 control-label" for="nachname">Nachname</label>
-                <input type="text" class="form-control" id="validationCustom02" placeholder="Nachname" value="" required>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 mb-3">
-                <label>Adresse</label>
-                <input type="text" class="form-control" id="validationCustom03" placeholder="" required>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label>Ort/ City</label>
-                <input type="text" class="form-control" id="validationCustom04" placeholder="" required>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label>PLZ</label>
-                <input type="text" class="form-control" id="validationCustom05" placeholder="" required>
-            </div>
-        </div>
-        <div class="row">
-            <div class="form-group col-md-3 mb-3">
-                <label>Datum von:</label>
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-            <div class="form-group col-md-3 mb-3">
-                <label>Datum bis:</label>
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-            <div class="col-md-2 mb-3">
-                <label>Anzahl-Personen:</label>
-                <input type="text" class="form-control" id="validationCustom06" placeholder="" required>
-            </div>
-            <div class="col-md-2 mb-3">
-                <label>Auto:</label>
-                <div class="radio">
-                    <label><input type="radio" name="optradio">  Mercedes E</label>
-                </div>
-                <div class="radio">
-                    <label><input type="radio" name="optradio">  Mercedes S</label>
-                </div>
-                <div class="radio disabled">
-                    <label><input type="radio" name="optradio">  Mercedes V</label>
-                </div>
-            </div>
-            <div class="col-md-2 mb-3">
-                <label>Bezahlen Sie mit:</label>
-                <div class="radio">
-                    <label><input type="radio" name="optradio">  Credit Card</label>
-                </div>
-                <div class="radio">
-                    <label><input type="radio" name="optradio">  Postfinance</label>
-                </div>
-                <div class="radio disabled">
-                    <label><input type="radio" name="optradio">  Paypal</label>
-                </div>
-            </div>
-            
-        </div>
-        <div>
-        <input type="checkbox" required> Ich habe die Allgemeinen Geschäftsbedingungen gelesen und stimme zu.
-        </div><br>
-        <button class="col-md-2 btn btn-primary zoom" type="submit">Reservation</button>
-        <br><br><br><br>
-        <hr>
+    <div class="sectionBuchenKontakt">
+        <h1>Reservation / Buchen</h1><br><br>
 
-        <!-- FOOTER -->
-        <footer class="footer">
-            <p class="float-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2017 King's Limousine VIP Service</p>
-        </footer>
-    </form>
+        <form data-toggle="validator" role="form">
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label for="inputName" class="control-label">Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Name" data-error="Sorry, you must write your name" required>
+                    <div class="help-block with-errors"></div>
+                </div>
 
+                <div class="col-md-6 form-group">
+                    <label for="inputEmail" class="control-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Sorry, that email address is invalid" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 form-group">
+                    <label for="inputAdress" class="control-label">Adresse</label>
+                    <input type="text" class="form-control" id="inputAdress" placeholder="Adresse" data-error="Sorry, you must write your name">
+                </div>
+
+                <div class="col-md-3 form-group">
+                    <label for="inputPLZ" class="control-label">PLZ</label>
+                    <input type="text" class="form-control" id="inputPLZ" placeholder="PLZ / ZIP" data-error="Sorry, that ZIP code is invalid">
+                </div>
+
+                <div class="col-md-3 form-group">
+                    <label for="inputCity" class="control-label">Ort / City</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Ort / City" data-error="">
+                </div>
+
+                <div class="col-md-3 form-group">
+                    <label for="inputState" class="control-label">State / Kanton</label>
+                    <input type="text" class="form-control" id="inputState" placeholder="State / Kanton" data-error="Sorry, write your kanton">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-3 mb-3">
+                    <label for="datetimepicker1" class="control-label">Datum von:</label>
+                    <div class='input-group date'>
+                        <input type='date' class="form-control" id='datetimepicker1' />
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group col-md-3 mb-3">
+                    <label for="datetimepicker2" class="control-label">Datum bis:</label>
+                    <div class='input-group date'>
+                        <input type='date' class="form-control" id='datetimepicker2' />
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="anzahlPerson" class="control-label">Anzahl-Personen:</label>
+                    <input type="text" class="form-control" id="anzahlPerson" placeholder="" required>
+                </div>
+
+                <div class="col-md-2 mb-3">
+                    <fieldset>
+                        <legend>Auto:</legend>
+                        <div class="radio">
+                            <label><input type="radio" name="autoModel">Mercedes E</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="autoModel">Mercedes S</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="autoModel">Mercedes V</label>
+                        </div>
+                </div>
+
+
+                <div class="col-md-2 mb-3">
+                    <fieldset>
+                        <legend>Bezahlen mit:</legend>
+                        <div class="radio">
+                            <label>
+                            <input type="radio" name="payment">  Credit Card</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                            <input type="radio" name="payment">  Postfinance</label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                            <input type="radio" name="payment">  Paypal</label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div>
+                <label for="agb" class="control-label">* </label>
+                <input id="agb" type="checkbox" required><span> Ich habe die Allgemeinen Geschäftsbedingungen gelesen und stimme zu.</span>
+            </div><br>
+            <div class="form-group">
+                <button class="col-md-2 btn btn-primary zoom myForm" type="submit">Reservation</button>
+            </div>
+            <br><br>
+            <hr>
+
+            <!--
+    ------ FOOTER -----------
+-->
+            <footer class="footer">
+                <p class="float-right"><a href="#">Back to top</a></p>
+                <p>&copy; 2017 King's Limousine VIP Service</p>
+            </footer>
+        </form>
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -134,6 +158,8 @@
     <script src="jquery/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

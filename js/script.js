@@ -1,8 +1,4 @@
-$( document ).ready(function() {
-    $(".threeColumnImages").on("mouseover", function{
-           $(this).addClass("zoom");                    
-                               
-    });
-
-
+$(document).ready(function() {
+    $('#myForm').validator()
 });
+

@@ -8,14 +8,14 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/script.js"></script>
+
 
 </head>
 
 <body>
     <div class="top-bar fixed"></div>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <img class="navbar-brand logo" src="img/logo.png" alt="logo image"></img>
+        <img class="navbar-brand logo" src="img/logo.png" alt="Kings Limousine Logo"></img>
         <a class="logo-text" href="index.html">King's Limousine</a>
         <button id="hamburger" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@
     </nav>
 
     <div class="container sectionBuchenKontakt">
-       <h2 class="text-center">Kontaktformular</h2><br><br>
+        <h1 class="text-center">Kontakt</h1><br><br>
         <div class="row">
             <div class="col-md-6">
                 <h2>King's Limousine & VIP Service</h2>
@@ -48,11 +48,11 @@
                 <br>
                 <a href="mailto: contact@kingslimousine.ch">contact@kingslimousine.ch</a>
             </div>
-            <div class="col-md-6 col-md-offset-3">
+            <div id="formKontakt" class="col-md-6 col-md-offset-3">
                 <div class="well well-sm">
                     <form class="form-horizontal" action="" method="post">
                         <fieldset>
-                            
+                            <legend>Kontaktformular</legend>
 
                             <!-- Name input-->
                             <div class="form-group">
@@ -81,7 +81,7 @@
                             <!-- Form actions -->
                             <div class="form-group">
                                 <div class="col-md-9 text-right">
-                                    <button type="submit" class="btn btn-primary btn-lg zoom">Senden</button>
+                                    <button type="submit" class="btn btn-primary btn-lg zoom myForm">Senden</button>
                                 </div>
                             </div>
                         </fieldset>
@@ -107,7 +107,8 @@
     <script src="jquery/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/validator.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
