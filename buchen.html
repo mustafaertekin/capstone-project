@@ -36,7 +36,7 @@
         </div>
     </nav>
 
-    <div class="sectionBuchenKontakt">
+    <div class="col-sm-12 col-md-6 col-lg-9 sectionBuchenKontakt">
         <h1>Reservation / Buchen</h1><br>
 
         <form data-toggle="validator" role="form">
@@ -54,28 +54,28 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 form-group">
+                <div class="col-md-6 col-lg-3 form-group">
                     <label for="inputAdress" class="control-label">Adresse</label>
                     <input type="text" class="form-control" id="inputAdress" placeholder="Adresse" data-error="Sorry, you must write your name">
                 </div>
 
-                <div class="col-md-3 form-group">
+                <div class="col-md-6 col-lg-3 form-group">
                     <label for="inputPLZ" class="control-label">PLZ</label>
                     <input type="text" class="form-control" id="inputPLZ" placeholder="PLZ / ZIP" data-error="Sorry, that ZIP code is invalid">
                 </div>
 
-                <div class="col-md-3 form-group">
+                <div class="col-md-6 col-lg-3 form-group">
                     <label for="inputCity" class="control-label">Ort / City</label>
                     <input type="text" class="form-control" id="inputCity" placeholder="Ort / City" data-error="">
                 </div>
 
-                <div class="col-md-3 form-group">
+                <div class="col-md-6 col-lg-3 form-group">
                     <label for="inputState" class="control-label">State / Kanton</label>
                     <input type="text" class="form-control" id="inputState" placeholder="State / Kanton" data-error="Sorry, write your kanton">
                 </div>
             </div>
             <div class="row">
-                <div class="form-group col-md-3 mb-3">
+                <div class="form-group col-md-6 col-lg-3 mb-3">
                     <label for="datetimepicker1" class="control-label">Datum von:</label>
                     <div class='input-group date'>
                         <input type='date' class="form-control" id='datetimepicker1' />
@@ -84,7 +84,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="form-group col-md-3 mb-3">
+                <div class="form-group col-md-6 col-lg-3 mb-3">
                     <label for="datetimepicker2" class="control-label">Datum bis:</label>
                     <div class='input-group date'>
                         <input type='date' class="form-control" id='datetimepicker2' />
@@ -93,11 +93,11 @@
                         </span>
                     </div>
                 </div>
-                <div class="col-md-2 mb-3">
+                <div class="col-md-12 col-lg-2 mb-3">
                     <label for="anzahlPerson" class="control-label">Anzahl-Personen:</label>
                     <input type="text" class="form-control" id="anzahlPerson" placeholder="" required>
                 </div>
-                <div class="col-md-2 mb-3">
+                <div class="col-md-6 col-lg-2 mb-3">
                     <fieldset>
                         <legend>Auto:</legend>
                         <div class="radio">
@@ -114,7 +114,7 @@
                         </div>
                     </fieldset>
                 </div>
-                <div class="col-md-2 mb-3">
+                <div class="col-md-6 col-lg-2 mb-3">
                     <fieldset>
                         <legend>Bezahlen mit:</legend>
                         <div class="radio">
@@ -133,11 +133,11 @@
                 </div>
             </div>
 
-            <div>
+            <div class="col-xs-12">
                 <label for="agb" class="control-label">* </label>
                 <input id="agb" type="checkbox" required><span> Ich habe die Allgemeinen Geschäftsbedingungen gelesen und stimme zu.</span>
             </div>
-            <div class="form-group">
+            <div class=" form-group">
                 <button class="col-md-2 btn btn-primary zoom myForm" type="submit">Reservation</button>
             </div>
 
